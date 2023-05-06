@@ -21,7 +21,7 @@ loginForm.onsubmit = (e) => {
   const emailEror = loginForm.email;
   const emailEl = emailEror.value;
   console.log(emailEl);
-  const regexEmail = /^\w{4,}@\w+.\w+$/;
+  const regexEmail = /^\w{4,}@\w+\.\w+$/;
   if (emailEl == "") {
     error[1].innerHTML = "Vui lòng không để trống thông tin";
     emailEror.classList.add("error-border");
